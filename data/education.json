@@ -1,0 +1,11 @@
+[
+  {
+    "name": "University of Example",
+    "startDate": "August 2018",
+    "endDate": "May 2022",
+    "major": "Computer Science",
+    "minor": "Mathematics",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "coursework": "Data Structures, Algorithms, Calculus, Linear Algebra, etc."
+  }
+]

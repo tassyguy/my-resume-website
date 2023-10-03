@@ -1,0 +1,60 @@
+[
+  {
+    "employerName": "Company A",
+    "jobs": [
+      {
+        "title": "Senior Software Engineer",
+        "startDate": "January 2018",
+        "endDate": "Present",
+        "responsibilities": [
+          "Developed and maintained web applications using React and Node.js.",
+          "Led a team of developers on critical projects.",
+          "Collaborated with cross-functional teams to deliver high-quality software."
+        ],
+        "skills": [
+          "React",
+          "Node.js",
+          "JavaScript",
+          "Team Leadership",
+          "Agile Development"
+        ]
+      }
+    ]
+  },
+  {
+    "employerName": "Company B",
+    "jobs": [
+      {
+        "title": "Software Engineer",
+        "startDate": "July 2015",
+        "endDate": "December 2017",
+        "responsibilities": [
+          "Developed frontend components using AngularJS.",
+          "Collaborated with the UX/UI team to improve user experiences.",
+          "Performed code reviews and mentored junior developers."
+        ],
+        "skills": [
+          "AngularJS",
+          "JavaScript",
+          "HTML/CSS",
+          "Code Reviews",
+          "Mentoring"
+        ]
+      },
+      {
+        "title": "Intern",
+        "startDate": "May 2014",
+        "endDate": "August 2014",
+        "responsibilities": [
+          "Assisted in software testing and debugging.",
+          "Learned and applied best practices in software development."
+        ],
+        "skills": [
+          "Software Testing",
+          "Problem Solving",
+          "Software Development"
+        ]
+      }
+    ]
+  }
+]

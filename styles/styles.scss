@@ -1,0 +1,18 @@
+// styles/styles.scss
+
+/* Import the Tailwind CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import './fonts.scss';
+
+/* Your custom SCSS styles go here */
+
+/* Example: Custom header styles */
+header {
+    background-color: aqua;
+}
+
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
