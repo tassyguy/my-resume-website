@@ -10,7 +10,7 @@
     "format": "prettier --write \"**/*.js\" \"**/*.jsx\" \"**/*.ts\" \"**/*.tsx\"",
     "predeploy": "next build",
     "deploy": "next export",
-    "postdeploy": "touch out/.nojekyll && mv out/* . && rm -rf out"
+    "postdeploy": "node -e \"require('os').platform() === 'win32' ? require('child_process').execSync('powershell -Command \"New-Item -Path out/.nojekyll -ItemType file; Move-Item -Path out/* -Destination .; Remove-Item -Path out -Recurse\"') : require('child_process').execSync('touch out/.nojekyll && mv out/* . && rm -rf out');\""
   },
   "dependencies": {
     "next": "13.5.4",
