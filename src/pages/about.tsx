@@ -11,16 +11,16 @@ const AboutPage: React.FC = () => {
 
         {/* Introduction */}
         <p>
-          Hi, I&apos;m [Your Name], a seasoned software engineer with a passion for crafting innovative web
-          solutions. I bring [X] years of experience in [Your Key Expertise Areas].
+          Hi, I&apos;m Simon, a seasoned software engineer with a passion for crafting innovative web
+          solutions. I bring 8 years of experience in JavaScript, TypeScript, Java, Node.JS, and other software platforms.
         </p>
 
         {/* Professional Background */}
         <section className="mt-4">
           <h2 className="text-xl font-semibold mb-2">Professional Background</h2>
           <p>
-            I graduated from [Your University] with a [Your Degree] in [Your Major/Field]. Since then, I&apos;ve
-            worked at [Your Previous Companies] and gained experience in [Relevant Technologies].
+            I graduated from Georgia State University with a Bachelor&apos;s degree in ComputerScience. Since then, I&apos;ve
+            worked at Dematic, Verison Wireless, and other places and gained experience in software development.
           </p>
         </section>
 
@@ -36,21 +36,20 @@ const AboutPage: React.FC = () => {
           </ul>
         </section>
 
-        {/* Professional Achievements */}
+        {/* Professional Achievements
         <section className="mt-4">
           <h2 className="text-xl font-semibold mb-2">Professional Achievements</h2>
           <ul className="list-disc list-inside">
             <li>Successfully led a team of developers in a high-impact project that [Achievement Details].</li>
             <li>Received the [Specific Award] for [Reason].</li>
-            {/* Add more achievements */}
           </ul>
-        </section>
+        </section>*/}
 
         {/* Work Philosophy */}
         <section className="mt-4">
           <h2 className="text-xl font-semibold mb-2">Work Philosophy</h2>
           <p>
-            I believe in [Your Work Philosophy]. I prioritize collaboration, agile development, and delivering
+            I believe in being a good employee. I prioritize collaboration, agile development, and delivering
             robust and scalable solutions.
           </p>
         </section>
@@ -58,8 +57,8 @@ const AboutPage: React.FC = () => {
         {/* Contact Information */}
         <section className="mt-4">
           <h2 className="text-xl font-semibold mb-2">Contact Information</h2>
-          <p>Email: [Your Email Address]</p>
-          <p>LinkedIn: [Your LinkedIn Profile]</p>
+          <p>Email: simonxphillips@gmail.com</p>
+          <p>LinkedIn: linkedin.com/simonxphillips</p>
           {/* Add more contact information */}
         </section>
 
