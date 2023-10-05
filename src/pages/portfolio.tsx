@@ -10,6 +10,7 @@ const Portfolio: React.FC = () => {
     <div>
       <Header />
       <h1>Portfolio</h1>
+      <p>Some portfolio links of mine.</p>
       <div className='portfolio-list'>
         {portfolioData.map((item, index) => (
           <PortfolioLink

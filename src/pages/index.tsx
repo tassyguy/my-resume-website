@@ -14,6 +14,7 @@ const Home: React.FC = () => {
       <Header />
       <h1>Simon Phillips</h1>
       <p>Welcome to my website! This site is currently under construction so be cautioned.</p>
+      <p>This site was built using Next.JS, TypeScript, React, SCSS, and deployed using GitHub Actions.</p>
       <main>
         <CurrentSection sectionID={section as string} />
       </main>
