@@ -32,7 +32,7 @@ const nextConfig = {
     });
     return config;
   },
-  basePath: '/my-resume-website',
+  basePath: '',
 };
 
 module.exports = nextConfig;
