@@ -12,7 +12,7 @@ const Home: React.FC = () => {
   return (
     <div>
       <Header />
-      <h1>Simon Phillips</h1>
+      <h1 className='section-header'>Simon Phillips</h1>
       <p>Welcome to my website! This site is currently under construction so be cautioned.</p>
       <p>This site was built using Next.JS, TypeScript, React, SCSS, and deployed using GitHub Actions.</p>
       <main>

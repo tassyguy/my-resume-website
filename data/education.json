@@ -1,11 +1,11 @@
 [
   {
-    "name": "University of Example",
-    "startDate": "August 2018",
-    "endDate": "May 2022",
+    "name": "Georgia State University",
+    "startDate": "August 2013",
+    "endDate": "May 2017",
     "major": "Computer Science",
-    "minor": "Mathematics",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "coursework": "Data Structures, Algorithms, Calculus, Linear Algebra, etc."
+    "minor": "Psychology",
+    "description": "Go Panthers!",
+    "coursework": "Data Structures, Algorithms, Calculus, Linear Algebra, Human-Computer Interaction, Abnormal Psychology, GUI"
   }
 ]

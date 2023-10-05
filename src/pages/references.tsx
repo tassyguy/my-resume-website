@@ -8,7 +8,7 @@ const ReferencesPage: React.FC = () => {
   return (
     <div>
       <Header />
-      <h1 className="text-2xl font-semibold mb-4">References</h1>
+      <h1 className='section-header'>References</h1>
       {referenceData.map((reference, index) => (
         <ReferenceProfile
           key={index}

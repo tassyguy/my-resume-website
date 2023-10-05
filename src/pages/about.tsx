@@ -6,8 +6,8 @@ const AboutPage: React.FC = () => {
   return (
     <div>
       <Header />
+      <h1 className='section-header'>About Me</h1>
       <section className="p-4">
-        <h1 className="text-2xl font-semibold mb-4">About Me</h1>
 
         {/* Introduction */}
         <p>

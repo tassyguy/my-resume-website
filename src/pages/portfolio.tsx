@@ -9,7 +9,7 @@ const Portfolio: React.FC = () => {
   return (
     <div>
       <Header />
-      <h1>Portfolio</h1>
+      <h1 className='section-header'>Portfolio</h1>
       <p>Some portfolio links of mine.</p>
       <div className='portfolio-list'>
         {portfolioData.map((item, index) => (
