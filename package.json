@@ -9,8 +9,7 @@
     "lint": "next lint",
     "format": "prettier --write \"**/*.js\" \"**/*.jsx\" \"**/*.ts\" \"**/*.tsx\"",
     "predeploy": "next build",
-    "deploy": "next export",
-    "postdeploy": "touch out/.nojekyll && mv out/* . && rm -rf out"
+    "deploy": "next export"
   },
   "dependencies": {
     "next": "13.5.4",
