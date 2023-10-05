@@ -1,22 +1,10 @@
 // src/pages/work-experience.tsx
 import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
-import { Employer } from '../types';
+import workExperiences from '../../data/workExperience.json';
 import '../../styles/styles.scss';
 
-const WorkExperience = () => {
-  const [workExperiences, setWorkExperiences] = useState<Employer[]>([]);
-
-  useEffect(() => {
-    // Fetch work experience data from the JSON file
-    fetch('/data/workExperience.json')
-      .then((response) => response.json())
-      .then((data) => setWorkExperiences(data))
-      .catch((error) =>
-        console.error('Error fetching work experience data:', error)
-      );
-  }, []);
-
+const WorkExperience: React.FC = () => {
   return (
     <div>
       <Header />
