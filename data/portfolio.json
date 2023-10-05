@@ -1,14 +1,14 @@
 [
   {
-    "name": "Project A",
-    "link": "https://example.com/project-a",
+    "name": "GitHub",
+    "link": "https://github.com/tassyguy",
     "icon": "/images/project-a-icon.png",
-    "description": "A description of Project A."
+    "description": "My GitHub profile with all my current and past personal projects."
   },
   {
-    "name": "Project B",
-    "link": "https://example.com/project-b",
+    "name": "Behance",
+    "link": "https://www.behance.net/simonxphillips",
     "icon": "/images/project-b-icon.png",
-    "description": "A description of Project B."
+    "description": "UX and creative projects I have made in the past."
   }
 ]
