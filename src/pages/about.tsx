@@ -11,7 +11,7 @@ const AboutPage: React.FC = () => {
 
         {/* Introduction */}
         <p>
-          Hi, I'm [Your Name], a seasoned software engineer with a passion for crafting innovative web
+          Hi, I&apos;m [Your Name], a seasoned software engineer with a passion for crafting innovative web
           solutions. I bring [X] years of experience in [Your Key Expertise Areas].
         </p>
 
@@ -19,7 +19,7 @@ const AboutPage: React.FC = () => {
         <section className="mt-4">
           <h2 className="text-xl font-semibold mb-2">Professional Background</h2>
           <p>
-            I graduated from [Your University] with a [Your Degree] in [Your Major/Field]. Since then, I've
+            I graduated from [Your University] with a [Your Degree] in [Your Major/Field]. Since then, I&apos;ve
             worked at [Your Previous Companies] and gained experience in [Relevant Technologies].
           </p>
         </section>
