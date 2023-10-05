@@ -13,6 +13,7 @@ const Home: React.FC = () => {
     <div>
       <Header />
       <h1>Simon Phillips</h1>
+      <p>Welcome to my website! This site is currently under construction so be cautioned.</p>
       <main>
         <CurrentSection sectionID={section as string} />
       </main>
