@@ -32,6 +32,8 @@ const nextConfig = {
     });
     return config;
   },
+  output: 'export',
+  basePath: '/my-resume-website',
 };
 
 module.exports = nextConfig;
