@@ -1,34 +1,24 @@
 // src/components/Header.tsx
 import React from 'react';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 import '../../styles/styles.scss';
 
+import '@material/web/tabs/tabs.js';
+import '@material/web/tabs/primary-tab.js';
+import '@material/web/tabs/secondary-tab.js';
+import '@material/web/icon/icon.js';
+
 const Header: React.FC = () => {
   return (
-    <header className="bg-gray-800 text-white p-4">
-      <nav className="container mx-auto flex justify-center">
-        <div className="flex items-center space-x-4">
-          <div>
-            <Link href="/">Home</Link>
-          </div>
-          <div>
-            <Link href="/about">About</Link>
-          </div>
-          <div>
-            <Link href="/work-experience">Work Experience</Link>
-          </div>
-          <div>
-            <Link href="/education">Education</Link>
-          </div>
-          <div>
-            <Link href="/portfolio">Portfolio</Link>
-          </div>
-          <div>
-            <Link href="/references" className="hover:underline">References</Link>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <md-tabs>
+      <md-primary-tab id="home"><Link href="/"><md-icon slot="icon">piano</md-icon>Home</Link></md-primary-tab>
+      <md-primary-tab id="about"><Link href="/about">About</Link></md-primary-tab>
+      <md-primary-tab id="workExperience"><Link href="/work-experience">Work Experience</Link></md-primary-tab>
+      <md-primary-tab id="education"><Link href="/education">Education</Link></md-primary-tab>
+      <md-primary-tab id="portfolio"><Link href="/portfolio">Portfolio</Link></md-primary-tab>
+      <md-primary-tab id="references"><Link href="/references">References</Link></md-primary-tab>
+    </md-tabs>
   );
 };
 
