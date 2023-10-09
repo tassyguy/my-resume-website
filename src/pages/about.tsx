@@ -1,7 +1,8 @@
 // pages/about.tsx
 import React from 'react';
-import Header from '../components/Header';
+import Header from '@/components/Header';
 import Link from 'next/link';
+import '../../styles/styles.scss';
 
 const AboutPage: React.FC = () => {
 

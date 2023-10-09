@@ -1,34 +1,41 @@
 // src/components/Header.tsx
 import React from 'react';
 import Link from 'next/link';
-import '../../styles/styles.scss';
+import Image from 'next/image';
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-gray-800 text-white p-4">
-      <nav className="container mx-auto flex justify-center">
-        <div className="flex items-center space-x-4">
-          <div>
+    <header className="navbar">
+      <div className="logo">
+        
+        <Link href="/">
+          <Image src="/man.svg" alt="My logo" width={24} height={24} className="logoImage"/> Simon Phillips
+        </Link>
+      </div>
+      <nav className="nav-items">
+        <ul>
+          <li>
             <Link href="/">Home</Link>
-          </div>
-          <div>
+          </li>
+          <li>
             <Link href="/about">About</Link>
-          </div>
-          <div>
-            <Link href="/work-experience">Work Experience</Link>
-          </div>
-          <div>
+          </li>
+          <li>
+            <Link href="/work-experience">Work</Link>
+          </li>
+          <li>
             <Link href="/education">Education</Link>
-          </div>
-          <div>
+          </li>
+          <li>
             <Link href="/portfolio">Portfolio</Link>
-          </div>
+          </li>
           {/*<div>
             <Link href="/references" className="hover:underline">References</Link>
           </div>*/}
-        </div>
+        </ul>
       </nav>
     </header>
+    
   );
 };
 

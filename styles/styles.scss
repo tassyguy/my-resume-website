@@ -20,3 +20,52 @@ header {
 * {
     font-family: 'Noto Sans', sans-serif;
 }
+
+.logoImage {
+    z-index: 9
+}
+
+/* styles.css or a SCSS file */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    /* Horizontally distribute items evenly */
+    align-items: center;
+    /* Vertically center items */
+    background-color: #333;
+    /* Background color of the navigation bar */
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+}
+
+.logo a {
+    color: #fff;
+    /* Text color for the logo */
+    text-decoration: none;
+    /* Remove underlines from the logo */
+    font-size: 24px;
+    /* Adjust font size as needed */
+}
+
+.nav-items ul {
+    list-style: none;
+    /* Remove list bullets */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    display: flex;
+    /* Make the navigation items a flex container */
+}
+
+.nav-items li {
+    margin-right: 10px;
+    /* Add space between navigation items */
+}
+
+.nav-items a {
+    color: #fff;
+    /* Text color for navigation items */
+    text-decoration: none;
+    /* Remove underlines from links */
+}
