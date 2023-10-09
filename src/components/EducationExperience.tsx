@@ -19,12 +19,12 @@ const EducationExperience: React.FC<EducationExperienceProps> = ({
       </p>
       <p>
         <span className="font-semibold">Major:</span> {major}
-        {minor && (
-          <span>
-            , <span className="font-semibold">Minor:</span> {minor}
-          </span>
-        )}
       </p>
+      {minor && (
+        <p>
+          <span className="font-semibold">Minor:</span> {minor}
+        </p>
+      )}
       <p className="mt-2">{description}</p>
       <p className="mt-2">
         <span className="font-semibold">Relevant Coursework:</span> {coursework}

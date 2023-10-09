@@ -23,9 +23,9 @@ const Header: React.FC = () => {
           <div>
             <Link href="/portfolio">Portfolio</Link>
           </div>
-          <div>
+          {/*<div>
             <Link href="/references" className="hover:underline">References</Link>
-          </div>
+          </div>*/}
         </div>
       </nav>
     </header>

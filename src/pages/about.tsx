@@ -1,8 +1,10 @@
 // pages/about.tsx
 import React from 'react';
 import Header from '../components/Header';
+import Link from 'next/link';
 
 const AboutPage: React.FC = () => {
+
   return (
     <div>
       <Header />
@@ -28,10 +30,11 @@ const AboutPage: React.FC = () => {
         <section className="mt-4">
           <h2 className="text-xl font-semibold mb-2">Technical Skills</h2>
           <ul className="list-disc list-inside">
-            <li>JavaScript (ES6+)</li>
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>SQL and NoSQL databases</li>
+            <li>JavaScript, Java Spring, React, Redux, Adobe Creative Suite, Bootstrap, Adobe Photoshop, Adobe Illustrator</li>
+            <li>HTML5 & CSS3, Material Design, Sketch, Microsoft Office, VirtualBox, IntelliJ, iTerm, Node.js, NPM, Angular.js</li>
+            <li>Python, Adobe Experience Designer, Figma, Unix Terminal, Scrum, Agile, User Interface, User Experience, User Testing</li>
+            <li>Visual Studio Code, CLI, Bash, Shell, Windows Server, Linux Server Deployment and Administration</li>
+            <li>Arch Linux, ZSH, Ubuntu, Shell, Environment Files</li>
             {/* Add more skills */}
           </ul>
         </section>
@@ -56,20 +59,12 @@ const AboutPage: React.FC = () => {
 
         {/* Contact Information */}
         <section className="mt-4">
-          <h2 className="text-xl font-semibold mb-2">Contact Information</h2>
-          <p>Email: simonxphillips@gmail.com</p>
-          <p>LinkedIn: linkedin.com/simonxphillips</p>
-          {/* Add more contact information */}
-        </section>
-
-        {/* Call to Action */}
-        <section className="mt-4">
           <h2 className="text-xl font-semibold mb-2">Let&apos;s Connect!</h2>
-          <p>If you&apos;re interested in collaborating or have any questions, feel free to reach out. I&apos;m always
+          <p>If you&apos;re interested in collaborating or interviewing me for a potential positionm, or have any questions, feel free to reach out. I&apos;m always
             open to new opportunities and partnerships.</p>
-          <button className="bg-blue-500 text-white px-4 py-2 rounded-full mt-2">
-            Connect with Me
-          </button>
+          <p>Email: <Link href="mailto:simonxphillips@gmail.com">simonxphillips@gmail.com</Link></p>
+          <p>LinkedIn: <Link href="linkedin.com/in/simonxphillips">linkedin.com/in/simonxphillips</Link></p>
+          {/* Add more contact information */}
         </section>
       </section>
     </div>

@@ -1,58 +1,156 @@
 [
   {
-    "employerName": "Company A",
+    "employerName": "Simon Says Code, LLC.",
     "jobs": [
       {
-        "title": "Senior Software Engineer",
-        "startDate": "January 2018",
+        "title": "Founder, CEO",
+        "startDate": "January 2022",
         "endDate": "Present",
         "responsibilities": [
-          "Developed and maintained web applications using React and Node.js.",
-          "Led a team of developers on critical projects.",
-          "Collaborated with cross-functional teams to deliver high-quality software."
+          "Managed, developed, and deployed custom tech solutions for various clients across the Greater Atlanta Area based on client’s specific tech needs and currently-existing infrastructures.",
+          "Regularly met with clients both in-person and virtually to discuss their needs and target audiences for their services, including search-engine optimization, hosting, and targeted social media campaigns based on desired clientele demographics and locations.",
+          "Developed website solutions for clients on multiple hosting services including Squarespace and private domains, worked on both Squarespace-based templates with custom code injected to from-scratch coded websites.",
+          "Clients include Medical Associates Hair Transplant Clinic and Gyneconcepts, Inc."
         ],
         "skills": [
-          "React",
-          "Node.js",
-          "JavaScript",
-          "Team Leadership",
-          "Agile Development"
+          "Visual Studio Code, Figma, React (version 17.x and 18.x)",
+          "Java, Java Springboot, React Redux, TypeScript, npm, nvm, Node",
+          "CI/CD software, bash, shell scripts, Confluence, private GitLab instances",
+          "Chrome developer tools, Firefox development tools, SCSS, Storybook, Jest",
+          "CI/CD, git pipelines, macOS, Windows, Adobe Creative Suite, PowerShell, Windows Subsystem for Linux"
         ]
       }
     ]
   },
   {
-    "employerName": "Company B",
+    "employerName": "Dematic",
     "jobs": [
       {
-        "title": "Software Engineer",
-        "startDate": "July 2015",
-        "endDate": "December 2017",
+        "title": "Full-Stack Software Engineer, Team Product Organizer",
+        "startDate": "June 2021",
+        "endDate": "August 2023",
         "responsibilities": [
-          "Developed frontend components using AngularJS.",
-          "Collaborated with the UX/UI team to improve user experiences.",
-          "Performed code reviews and mentored junior developers."
+          "Managed, developed, and deployed releases of DGU Component Library npm package, a TypeScript-based UI library for proprietary use within Dematic’s proprietary dashboard system.",
+          "Deployed builds of Storybook demos of DGU Component Library to Azure and AWS-based servers based on project needs and preferred hosting platform.",
+          "Helped write and manage testing suites for automatic and programmatic unit testing in Jest, worked with QA on debugging any testing errors that occurred in test and pre-release environments.",
+          "Managed versioning and git pipelines for private GitLab repository, including developing shell-agnostic CI/CD scripts to automatically generate release notes with new component version releases",
+          "Helped develop compatibility patches for Windows-based development environments to ensure fellow Windows-based developers could use the same tools as developers based in macOS/WSL/Linux-based environments",
+          "Regularly met with senior UX, engineering, QA engineers, and team leads to ensure deployed components met visual and functional standards as specified by UX and development teams in addition to clients.",
+          "Managed team based across continental United States, Germany, India, and United Kingdom",
+          "Worked with clients to make sure final product delivery matched both client and corporate requirements.",
+          "Managed team of developers and led standup, backlog grooming, sprint planning, and JIRA task management"
         ],
         "skills": [
-          "AngularJS",
-          "JavaScript",
-          "HTML/CSS",
-          "Code Reviews",
-          "Mentoring"
+          "Visual Studio Code, JIRA, Sketch, React (version 17.x and 18.x), React Redux",
+          "TypeScript, lit, Artifactory, npm, nvm, Node, CI/CD software, bash, shell scripts",
+          "Confluence, private GitLab instances, Chrome developer tools, Firefox development tools",
+          "SCSS, Storybook, Jest, Lerna, Vue, CI/CD, git pipelines, macOS, Windows, Adobe Creative Suite",
+          "Audacity, Sharepoint, Microsoft Teams, PowerShell, Windows Subsystem for Linux"
         ]
       },
       {
-        "title": "Intern",
-        "startDate": "May 2014",
-        "endDate": "August 2014",
+        "title": " Chairman and Site Lead for PRISM (LGBTQIA+ employee resource group)",
+        "startDate": "August 2021",
+        "endDate": "August 2023",
         "responsibilities": [
-          "Assisted in software testing and debugging.",
-          "Learned and applied best practices in software development."
+          "Led PRISM as co-chairman, managed all technical needs for group in addition to helping plan and organize Dematic’s annual presence and presentation at Atlanta Pride",
+          "Led exploring paths for growing membership as Midtown Atlanta campus site lead and social outreach via PRISM’s corporate podcast",
+          "Worked with Diversity, Equity, and Inclusion manager to help align PRISM with other company ERGs (employee resource groups) such as the Dematic’s Women’s Network and BOLD for cross-ERG sessions and to ensure groups worked together in our shared mission to make company a more inclusive work environment"
         ],
         "skills": [
-          "Software Testing",
-          "Problem Solving",
-          "Software Development"
+          "Project Management, LGBTQ+ outreach, DEI compliance, LGBTQ+ advocacy",
+          "Microsoft Teams, Todoist, JIRA, Agile, Scrum"
+        ]
+      }
+    ]
+  },
+  {
+    "employerName": "MarketForce Inf.",
+    "jobs": [
+      {
+        "title": "Full-Stack Software Engineer",
+        "startDate": "December 2019",
+        "endDate": "June 2021",
+        "responsibilities": [
+          "Assigned as designated UI developer for software engineering team, was primary point of contact for UI-related issues and tickets assigned to team in addition to assisting fellow team members and clients based throughout the United States, Canada, and United Kingdom to develop business software solutions for companies based in industries including but not limited to retail, cinema, brick-and-mortar, and most recently eCommerce",
+          "Collaborated with various departments via both JIRA and meetings to ensure QA-compliant software solutions designed originally in Figma were delivered in a timely manner to clients; assisted and led development in both front-end and back-end tasks while ensuring both ends worked as the project evolved during COVID-19 pandemic",
+          "Worked with other front-end developers to help create best practices for writing code in a consistent style to help with future onboarding and readability"
+        ],
+        "skills": [
+          "Visual Studio Professional, Visual Studio Code, React (version 16.x)",
+          "Microsoft SQL Server Management Studio, Figma, Azure, HTML/CSS, Node",
+          "C#, Redux, React Router, Bootstrap, SCSS, Webpack, Jest, Git, Bitbucket, Confluence, JIRA"
+        ]
+      }
+    ]
+  },
+  {
+    "employerName": "Verizon Wireless",
+    "jobs": [
+      {
+        "title": "OneMessage Developer",
+        "startDate": "April 2019",
+        "endDate": "December 2019",
+        "responsibilities": [
+          "Worked with the Verizon OneMessage and QA team to produce, debug, and update email, SMS, and push notifications and templates for customers and internal communications with an AWS codebase and Java Spring stack, collaborated with multiple teams to produce software solutions without breaking existing communication",
+          "Mapped job orchestration in internal tool to parse JSON requests from various upstream services to send appropriate communications to users based on customer feedback and legal/promotional requirements"
+        ],
+        "skills": [
+          "HTML/CSS/JavaScript, Java Maven, Node, SQL, React, XML tools",
+          "Amazon Web Services (AWS), Oracle Java Atlassian Jira, PuTTY, Visual Studio Code",
+          "internal company tools"
+        ]
+      }
+    ]
+  },
+  {
+    "employerName": "Veloxiti, Inc. / Decooda",
+    "jobs": [
+      {
+        "title": "Senior User Interface Engineer",
+        "startDate": "July 2018",
+        "endDate": "April 2019",
+        "responsibilities": [
+          "Worked on creating a consistent user experience and style guide across multiple company projects",
+          "Helped lead the implementation of user interface wire-frames and mock-ups in React and Angular-based projects"
+        ],
+        "skills": [
+          " HTML/CSS/JavaScript, PostgreSQL, Amazon Web Services (AWS), Atlassian Jira",
+          "Sketch, Tomcat, MongoDB, Java Springboot, Visual Studio Code, OpenJDK Java, Material Design"
+        ]
+      }
+    ]
+  },
+  {
+    "employerName": "StudentBridge",
+    "jobs": [
+      {
+        "title": "UX Designer",
+        "startDate": "March 2018",
+        "endDate": "July 2018",
+        "responsibilities": [
+          "Worked with Senior Product Analyst to help create UX design concepts for services such as analytics dashboards that would be then sent to developers to be made into a functioning application"
+
+        ],
+        "skills": [
+          "Visual Studio Code, Sketch, Material Design, Apple Design Guidelines, Material Design"
+        ]
+      }
+    ]
+  },
+  {
+    "employerName": "Cox Communications, Inc.",
+    "jobs": [
+      {
+        "title": "Safety and Risk IT Intern",
+        "startDate": "May 2017",
+        "endDate": "August 2017",
+        "responsibilities": [
+          "Migrated Health and Safety department to new SharePoint platform",
+          "Worked with HomeLife division to increase one-time-sales of HomeLife devices via stretch assignment"
+        ],
+        "skills": [
+          "Sublime Text, HTML, CSS, JavaScript, SharePoint, Microsoft Office, Microsoft Cloud Services"
         ]
       }
     ]

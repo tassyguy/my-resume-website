@@ -11,7 +11,7 @@ const WorkExperience: React.FC = () => {
       <h1 className='section-header'>Work Experience</h1>
       {workExperiences.map((employer, index) => (
         <div key={index}>
-          <h2>{employer.employerName}</h2>
+          <h2 className='section-header'>{employer.employerName}</h2>
           {employer.jobs.map((job, jobIndex) => (
             <div key={jobIndex}>
               <h3>{job.title}</h3>
