@@ -1,7 +1,7 @@
 // src/components/Header.tsx
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 const Header: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ const Header: React.FC = () => {
       <div className="logo">
         
         <Link href="/">
-          <Image src="/man.svg" alt="My logo" width={24} height={24} className="logoImage"/> Simon Phillips
+          {/*<Image src="/man.svg" alt="My logo" width={24} height={24} className="logoImage"/> */}Simon Phillips
         </Link>
       </div>
       <nav className="nav-items">
