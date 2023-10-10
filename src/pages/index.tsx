@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Header from '../components/Header';
 import CurrentSection from '../components/CurrentSection';
 import '../../styles/styles.scss';
+import Link from 'next/link';
 
 const Home: React.FC = () => {
   const router = useRouter();
@@ -23,6 +24,7 @@ const Home: React.FC = () => {
             <td>
               <p>Welcome to my website! This site is currently under construction so be cautioned.</p>
               <p>This site was built using Next.JS, TypeScript, React, SCSS, and deployed using GitHub Actions.</p>
+              <Link href='https://github.com/tassyguy/my-resume-website'>Check out the repo for this website here!</Link>
               <p>Current site roadmap:</p>
               <ul className='features'>
                 <li>✅Write site in Next.JS</li>
