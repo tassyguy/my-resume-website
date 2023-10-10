@@ -32,6 +32,7 @@ const Home: React.FC = () => {
                 <li>✅Convert codebase to TypeScript</li>
                 <li>✅Use JSON to dynamically load data on Work, Portfolio, and Education page</li>
                 <li>✅Deploy website to GitHub Pages for hosting</li>
+                <li>✅Edit DNS to use custom website URL</li>
                 <li>🔲Refactor to modern Next.JS file layout</li>
                 <li>🔲Add Material Design</li>
                 <li>🔲Add accessibility features</li>
