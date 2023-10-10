@@ -9,7 +9,7 @@ const Header: React.FC = () => {
       <div className="logo">
         
         <Link href="/">
-          {/*<Image src="/man.svg" alt="My logo" width={24} height={24} className="logoImage"/> */}Simon Phillips
+          {/*<Image src="/man.svg" alt="My logo" width={24} height={24} className="logoImage"/> */}🧔🏻‍♂️
         </Link>
       </div>
       <nav className="nav-items">
