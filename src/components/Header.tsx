@@ -2,7 +2,7 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import '../../styles/styles.scss';
+// import Image from 'next/image';
 
 import '@material/web/tabs/tabs.js';
 import '@material/web/tabs/primary-tab.js';

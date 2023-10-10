@@ -10,5 +10,11 @@
     "link": "https://www.behance.net/simonxphillips",
     "icon": "/images/project-b-icon.png",
     "description": "UX and creative projects I have made in the past."
+  },
+  {
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/simonxphillips",
+    "icon": "/images/project-b-icon.png",
+    "description": "My LinkedIn profile."
   }
 ]
