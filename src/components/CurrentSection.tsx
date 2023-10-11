@@ -1,10 +1,10 @@
 // src/components/CurrentSection.tsx
 import React from 'react';
-import AboutPage from '@/pages/about'; // Import your section components
-import WorkExperience from '@/pages/work-experience';
-import Education from '@/pages/education';
-import Portfolio from '@/pages/portfolio';
-import References from '@/pages/references';
+import AboutPage from '@/pages/app/about/about'; // Import your section components
+import WorkExperience from '@/pages/app/work-experience/pages';
+import Education from '@/pages/app/education/education';
+import Portfolio from '@/pages/app/portfolio/pages';
+import References from '@/pages/app/references/references';
 import { CurrentSectionProps } from '@/types';
 
 const CurrentSection: React.FC<CurrentSectionProps> = ({ sectionID }) => {

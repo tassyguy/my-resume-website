@@ -1,9 +1,9 @@
 // pages/education.tsx
 import React from 'react';
-import EducationExperience from '../components/EducationExperience';
-import educationData from '../../data/education.json';
+import EducationExperience from '@/components/EducationExperience';
+import educationData from '../../../data/education.json';
 import Header from '@/components/Header';
-import '../../styles/styles.scss';
+import '../../../styles/styles.scss';
 
 const EducationPage: React.FC = () => {
   return (

@@ -1,9 +1,9 @@
 // src/pages/portfolio.tsx
 import React, { useEffect, useState } from 'react';
-import Header from '../components/Header';
-import PortfolioLink from '../components/PortfolioLink';
-import portfolioData from '../../data/portfolio.json';
-import '../../styles/styles.scss';
+import Header from '@/components/Header';
+import PortfolioLink from '@/components/PortfolioLink';
+import portfolioData from '../../../data/portfolio.json';
+import '../../../styles/styles.scss';
 
 const Portfolio: React.FC = () => {
   return (

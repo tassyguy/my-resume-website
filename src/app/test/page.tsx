@@ -1,10 +1,10 @@
 // pages/education.tsx
 import React from 'react';
 import Header from '@/components/Header';
-import '../../styles/styles.scss';
 import '@material/web/button/outlined-button.js';
 import '@material/web/fab/fab.js';
 import '@material/web/icon/icon.js';
+import '../../../styles/styles.scss';
 
 const TestPage: React.FC = () => {
   return (

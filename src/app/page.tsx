@@ -1,15 +1,12 @@
 // pages/index.tsx
 import React from 'react';
-import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Header from '../components/Header';
-import CurrentSection from '../components/CurrentSection';
-import '../../styles/styles.scss';
 import Link from 'next/link';
+import '../../styles/styles.scss';
 
-const Home: React.FC = () => {
-  const router = useRouter();
-  const { section } = router.query; // Get the section ID from the URL
+
+const Home: React.FC = () => { // Get the section ID from the URL
 
   return (
     <div>
@@ -29,7 +26,7 @@ const Home: React.FC = () => {
                 <li>✅Use JSON to dynamically load data on Work, Portfolio, and Education page</li>
                 <li>✅Deploy website to GitHub Pages for hosting</li>
                 <li>✅Edit DNS to use custom website URL</li>
-                <li>🔲Refactor to modern Next.JS file layout</li>
+                <li>✅Refactor to modern Next.JS file layout</li>
                 <li>🔲Add Material Design</li>
                 <li>🔲Add accessibility features</li>
                 <li>🔲Proper mobile browser support</li>
@@ -38,9 +35,6 @@ const Home: React.FC = () => {
                 <li>🔲Add and password-protect References page</li>
                 <li>🔲Reduce file size of project</li>
               </ul>
-      <main>
-        <CurrentSection sectionID={section as string} />
-      </main>
     </div>
   );
 };
