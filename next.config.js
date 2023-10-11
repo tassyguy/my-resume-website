@@ -33,6 +33,7 @@ const nextConfig = {
     return config;
   },
   basePath: '',
+  output: 'export',
 };
 
 module.exports = nextConfig;

@@ -1,22 +1,20 @@
 // pages/index.tsx
 import React from 'react';
-import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Header from '../components/Header';
-import CurrentSection from '../components/CurrentSection';
-import '../../styles/styles.scss';
 import Link from 'next/link';
+import '../../styles/styles.scss';
 
-const Home: React.FC = () => {
-  const router = useRouter();
-  const { section } = router.query; // Get the section ID from the URL
+
+const Home: React.FC = () => { // Get the section ID from the URL
 
   return (
     <div>
       <Header />
       <h1 className='section-header'>Simon Phillips</h1>
       <Image src='/images/me.jpg' alt='A picture of me' width={400} height={400} />
-       <p>Welcome to my website! This site is currently under construction so be cautioned.</p>
+       <p>Welcome to my website! This site is currently under construction so be cautioned. I would LOVE to have the design finished but Google seems to want to take their time with releasing Material Design 3.</p>
+       <p>It&apos;s fine, I&apos;m fine. 🙃</p>
               <p>This site was built using Next.JS, TypeScript, React, SCSS, and deployed using GitHub Actions.</p>
               <Link href='https://github.com/tassyguy/my-resume-website'>Check out the repo for this website here!</Link>
               <p>Current site roadmap:</p>
@@ -29,7 +27,7 @@ const Home: React.FC = () => {
                 <li>✅Use JSON to dynamically load data on Work, Portfolio, and Education page</li>
                 <li>✅Deploy website to GitHub Pages for hosting</li>
                 <li>✅Edit DNS to use custom website URL</li>
-                <li>🔲Refactor to modern Next.JS file layout</li>
+                <li>✅Refactor to modern Next.JS file layout</li>
                 <li>🔲Add Material Design</li>
                 <li>🔲Add accessibility features</li>
                 <li>🔲Proper mobile browser support</li>
@@ -38,9 +36,6 @@ const Home: React.FC = () => {
                 <li>🔲Add and password-protect References page</li>
                 <li>🔲Reduce file size of project</li>
               </ul>
-      <main>
-        <CurrentSection sectionID={section as string} />
-      </main>
     </div>
   );
 };

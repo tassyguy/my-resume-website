@@ -1,8 +1,9 @@
 // pages/references.tsx (or your relevant page)
 import React from 'react';
-import ReferenceProfile from '../components/ReferencesProfile';
-import referenceData from '../../data/references.json';
+import ReferenceProfile from '@/components/ReferencesProfile';
+import referenceData from '../../../data/references.json';
 import Header from '@/components/Header';
+import '../../../styles/styles.scss';
 
 const ReferencesPage: React.FC = () => {
   return (
