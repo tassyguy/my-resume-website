@@ -13,7 +13,8 @@ const Home: React.FC = () => { // Get the section ID from the URL
       <Header />
       <h1 className='section-header'>Simon Phillips</h1>
       <Image src='/images/me.jpg' alt='A picture of me' width={400} height={400} />
-       <p>Welcome to my website! This site is currently under construction so be cautioned.</p>
+       <p>Welcome to my website! This site is currently under construction so be cautioned. I would LOVE to have the design finished but Google seems to want to take their time with releasing Material Design 3.</p>
+       <p>It&apos;s fine, I&apos;m fine. 🙃</p>
               <p>This site was built using Next.JS, TypeScript, React, SCSS, and deployed using GitHub Actions.</p>
               <Link href='https://github.com/tassyguy/my-resume-website'>Check out the repo for this website here!</Link>
               <p>Current site roadmap:</p>
