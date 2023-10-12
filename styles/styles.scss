@@ -5,12 +5,21 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import './fonts.scss';
+@import './themes/material/theme.css';
 
 /* Your custom SCSS styles go here */
 
 /* Example: Custom header styles */
 header {
     background-color: aqua;
+}
+
+body {
+    background-color: var(--md-sys-color-background);
+}
+
+p, ul, li, .section-header {
+    color: var(--md-sys-color-on-background);
 }
 
 .section-header {
@@ -33,7 +42,7 @@ header {
     /* Horizontally distribute items evenly */
     align-items: center;
     /* Vertically center items */
-    background-color: #000;
+    background-color: var(--md-sys-color-primary);
     border-radius: 50vh;
     /* Background color of the navigation bar */
     /*padding: 10px 20px;
@@ -66,7 +75,7 @@ header {
 }
 
 .nav-items a {
-    color: #fff;
+    color: var(--md-sys-color-on-primary);
     /* Text color for navigation items */
     text-decoration: none;
     /* Remove underlines from links */

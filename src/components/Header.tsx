@@ -1,9 +1,10 @@
 // src/components/Header.tsx
-import React from 'react';
+import React, {useState} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const Header: React.FC = () => {
+
   return (
     <header className="navbar">
       <div className="logo">
@@ -11,7 +12,7 @@ const Header: React.FC = () => {
           <Image src="/images/logo-dark.jpg" alt="My logo" width={48} height={48} className="logoImage"/>
         </Link>
       </div>
-      <nav className="nav-items">
+      <nav className={'nav-items'}>
         <ul>
           <li>
             <Link href="/about">About</Link>

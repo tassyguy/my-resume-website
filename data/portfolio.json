@@ -16,5 +16,11 @@
     "link": "https://www.linkedin.com/in/simonxphillips",
     "icon": "/images/project-b-icon.png",
     "description": "My LinkedIn profile."
+  },
+  {
+    "name": "Resume",
+    "link": "https://drive.google.com/file/d/10zoCEWRpc8XblT5ZZE10HWRTkMMMTuu0/view?usp=sharing",
+    "icon": "/images/project-b-icon.png",
+    "description": "A link to view my current resume."
   }
 ]
