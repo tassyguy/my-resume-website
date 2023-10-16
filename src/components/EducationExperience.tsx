@@ -13,7 +13,7 @@ const EducationExperience: React.FC<EducationExperienceProps> = ({
 }) => {
   return (
     <div className="mb-6">
-      <h2 className="text-xl font-semibold">{name}</h2>
+      <h2 className="text-xl font-semibold school">{name}</h2>
       <p className="text-gray-600">
         {startDate} - {endDate}
       </p>
