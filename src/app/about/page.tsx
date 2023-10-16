@@ -20,7 +20,7 @@ const AboutPage: React.FC = () => {
 
         {/* Professional Background */}
         <section className="mt-4">
-          <h2 className="text-xl font-semibold mb-2">Professional Background</h2>
+          <h2 className="text-xl font-semibold mb-2 about">Professional Background</h2>
           <p>
             I graduated from Georgia State University with a Bachelor&apos;s degree in ComputerScience. Since then, I&apos;ve
             worked at Dematic, Verison Wireless, and other places and gained experience in software development.
@@ -29,7 +29,7 @@ const AboutPage: React.FC = () => {
 
         {/* Technical Skills */}
         <section className="mt-4">
-          <h2 className="text-xl font-semibold mb-2">Technical Skills</h2>
+          <h2 className="text-xl font-semibold mb-2 about">Technical Skills</h2>
           <ul className="list-disc list-inside">
             <li>JavaScript, Java Spring, React, Redux, Adobe Creative Suite, Bootstrap, Adobe Photoshop, Adobe Illustrator</li>
             <li>HTML5 & CSS3, Material Design, Sketch, Microsoft Office, VirtualBox, IntelliJ, iTerm, Node.js, NPM, Angular.js</li>
@@ -51,7 +51,7 @@ const AboutPage: React.FC = () => {
 
         {/* Work Philosophy */}
         <section className="mt-4">
-          <h2 className="text-xl font-semibold mb-2">Work Philosophy</h2>
+          <h2 className="text-xl font-semibold mb-2 about">Work Philosophy</h2>
           <p>
             I believe in being a good employee. I prioritize collaboration, agile development, and delivering
             robust and scalable solutions.
@@ -60,11 +60,11 @@ const AboutPage: React.FC = () => {
 
         {/* Contact Information */}
         <section className="mt-4">
-          <h2 className="text-xl font-semibold mb-2">Let&apos;s Connect!</h2>
+          <h2 className="text-xl font-semibold mb-2 about">Let&apos;s Connect!</h2>
           <p>If you&apos;re interested in collaborating or interviewing me for a potential positionm, or have any questions, feel free to reach out. I&apos;m always
             open to new opportunities and partnerships.</p>
-          <p>Email: <Link href="mailto:simonxphillips@gmail.com">simonxphillips@gmail.com</Link></p>
-          <p>LinkedIn: <Link href="linkedin.com/in/simonxphillips">linkedin.com/in/simonxphillips</Link></p>
+          <p>Email: <Link href="mailto:simonxphillips@gmail.com" className={'about'}>simonxphillips@gmail.com</Link></p>
+          <p>LinkedIn: <Link href="linkedin.com/in/simonxphillips" className={'about'}>linkedin.com/in/simonxphillips</Link></p>
           {/* Add more contact information */}
         </section>
       </section>

@@ -18,8 +18,15 @@ body {
     background-color: var(--md-sys-color-background);
 }
 
-p, ul, li, .section-header, .portfolio-header, .school {
+p, ul, li, .section-header, .portfolio-header, .school, .about, .job-info {
     color: var(--md-sys-color-on-background);
+}
+
+.job-section {
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  margin: 10px 10px 10px 0px; /* Adjust the margin as needed */
 }
 
 .section-header {
@@ -99,7 +106,7 @@ img {
         }
 }
 
-.portfolio-header a {
+.portfolio-header a, .about a {
     color: var(--md-sys-color-on-background);
 }
 

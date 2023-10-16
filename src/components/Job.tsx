@@ -11,16 +11,16 @@ const Job = ({
 }: JobProps) => {
   return (
     <div>
-      <h4>{title}</h4>
+      <h4 className={'job-info'}>{title}</h4>
       <p>
         {startDate} - {endDate}
       </p>
       <div>
-        <h5>Responsibilities</h5>
+        <h5 className={'job-info'}>Responsibilities</h5>
         <ul>{responsibilities}</ul>
       </div>
       <div>
-        <h5>Skills</h5>
+        <h5 className={'job-info'}>Skills</h5>
         <ul>{skills}</ul>
       </div>
     </div>

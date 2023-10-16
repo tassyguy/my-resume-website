@@ -14,12 +14,12 @@ const WorkExperience: React.FC = () => {
           <h2 className='section-header'>{employer.employerName}</h2>
           {employer.jobs.map((job, jobIndex) => (
             <div key={jobIndex}>
-              <h3>{job.title}</h3>
+              <h3 className={'job-info'}>{job.title}</h3>
               <p>
                 {job.startDate} - {job.endDate}
               </p>
               <div>
-                <h4>Responsibilities:</h4>
+                <h4 className={'job-info'}>Responsibilities:</h4>
                 <ul>
                   {job.responsibilities.map((responsibility, resIndex) => (
                     <li key={resIndex}>{responsibility}</li>
@@ -27,7 +27,7 @@ const WorkExperience: React.FC = () => {
                 </ul>
               </div>
               <div>
-                <h4>Skills:</h4>
+                <h4 className={'job-info'}>Skills:</h4>
                 <ul>
                   {job.skills.map((skill, skillIndex) => (
                     <li key={skillIndex}>{skill}</li>
@@ -36,6 +36,7 @@ const WorkExperience: React.FC = () => {
               </div>
             </div>
           ))}
+          {index !== workExperiences.length - 1 && <div className='job-section'></div>}
         </div>
       ))}
     </div>
