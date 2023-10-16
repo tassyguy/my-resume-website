@@ -18,7 +18,7 @@ body {
     background-color: var(--md-sys-color-background);
 }
 
-p, ul, li, .section-header {
+p, ul, li, .section-header, .portfolio-header {
     color: var(--md-sys-color-on-background);
 }
 
@@ -87,4 +87,29 @@ p, ul, li, .section-header {
 
 img {
     display: block;
+}
+
+.portfolio-vector {
+    padding: 0px 10px 0px 0px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .portfolio-vector {
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(306deg) brightness(106%) contrast(102%);
+        }
+}
+
+.portfolio-header a {
+    color: var(--md-sys-color-on-background);
+}
+
+.portfolio-content {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

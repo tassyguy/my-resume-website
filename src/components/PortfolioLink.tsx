@@ -1,5 +1,7 @@
 import React from 'react';
 import { PortfolioLinkProps } from '@/types';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const PortfolioLink: React.FC<PortfolioLinkProps> = ({
   name,
@@ -9,15 +11,15 @@ const PortfolioLink: React.FC<PortfolioLinkProps> = ({
 }) => {
   return (
     <div className='portfolio-item'>
-      <div className='portfolio-icon'>
+      <div className='portfolio-icon portfolio-content'>
+        <Image src={icon} alt={`${name} Icon`} width={48} height={48} className="portfolio-vector"/>
         {/* <img src={icon} alt={`${name} Icon`} /> */}
       </div>
-      <div className='portfolio-details'>
-        <h3>{name}</h3>
+      <div className='portfolio-content'>
+        <h3 className={'portfolio-header'}><Link href={link} target='_blank' rel='noopener noreferrer'>{name}</Link></h3>
+        <div className='portfolio-details'>
         <p className='portfolio-description'>{description}</p>
-        <a href={link} target='_blank' rel='noopener noreferrer'>
-          Visit Website
-        </a>
+      </div>
       </div>
     </div>
   );

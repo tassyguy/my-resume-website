@@ -2,25 +2,25 @@
   {
     "name": "GitHub",
     "link": "https://github.com/tassyguy",
-    "icon": "/images/project-a-icon.png",
+    "icon": "/logos/github-mark.svg",
     "description": "My GitHub profile with all my current and past personal projects."
   },
   {
     "name": "Behance",
     "link": "https://www.behance.net/simonxphillips",
-    "icon": "/images/project-b-icon.png",
+    "icon": "/logos/behance.svg",
     "description": "UX and creative projects I have made in the past."
   },
   {
     "name": "LinkedIn",
     "link": "https://www.linkedin.com/in/simonxphillips",
-    "icon": "/images/project-b-icon.png",
+    "icon": "/logos/linkedin.svg",
     "description": "My LinkedIn profile."
   },
   {
     "name": "Resume",
     "link": "https://drive.google.com/file/d/10zoCEWRpc8XblT5ZZE10HWRTkMMMTuu0/view?usp=sharing",
-    "icon": "/images/project-b-icon.png",
+    "icon": "/logos/googledrive.png",
     "description": "A link to view my current resume."
   }
 ]

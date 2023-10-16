@@ -1,0 +1,11 @@
+.linksContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+@media (max-width: 768px) {
+    .linksContainer {
+        grid-template-columns: 1fr;
+    }
+}
