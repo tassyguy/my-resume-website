@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Header from '../components/Header';
+import LastCommitTimestamp from '@/components/LastCommitTimestamp';
 import Link from 'next/link';
 import '../../styles/styles.scss';
 
@@ -17,6 +18,7 @@ const Home: React.FC = () => { // Get the section ID from the URL
        <p>It&apos;s fine, I&apos;m fine. 🙃</p>
               <p>This site was built using Next.JS, TypeScript, React, SCSS, and deployed using GitHub Actions.</p>
               <Link href='https://github.com/tassyguy/my-resume-website'>Check out the repo for this website here!</Link>
+              <LastCommitTimestamp/>
               <p>Current site roadmap:</p>
               <ul className='features'>
                 <li>✅Write site in Next.JS</li>
