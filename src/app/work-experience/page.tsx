@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import workExperiences from '../../../data/workExperience.json';
 import '../../../styles/styles.scss';
-import ContentContainer from '@/components/ContentContainer';
 
 const WorkExperience: React.FC = () => {
   return (
