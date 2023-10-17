@@ -3,12 +3,14 @@ import React, { useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import workExperiences from '../../../data/workExperience.json';
 import '../../../styles/styles.scss';
+import ContentContainer from '@/components/ContentContainer';
 
 const WorkExperience: React.FC = () => {
   return (
     <div>
       <Header />
       <h1 className='section-header'>Work Experience</h1>
+      <p className='work-subheader'>Places I&apos;ve work at or for.</p>
       {workExperiences.map((employer, index) => (
         <div key={index}>
           <h2 className='section-header'>{employer.employerName}</h2>

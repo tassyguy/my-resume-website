@@ -18,7 +18,7 @@ body {
     background-color: var(--md-sys-color-background);
 }
 
-p, ul, li, .section-header, .portfolio-header, .school, .about, .job-info, .timestamp {
+p, ul, li, .section-header, .portfolio-header, .school, .about, .job-info, .timestamp, .repo {
     color: var(--md-sys-color-on-background);
 }
 
@@ -85,6 +85,8 @@ p, ul, li, .section-header, .portfolio-header, .school, .about, .job-info, .time
     color: var(--md-sys-color-on-primary);
     /* Text color for navigation items */
     text-decoration: none;
+
+    font-weight: bold;
     /* Remove underlines from links */
 }
 
@@ -115,8 +117,26 @@ img {
     vertical-align: middle;
 }
 
+.portfolio-subheader, .work-subheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .profile {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.content-container {
+    max-width: 1440px;
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.repo-logo {
+    padding-right: 10px;
+    filter: invert(0%) sepia(100%) saturate(7%) hue-rotate(165deg) brightness(97%) contrast(103%);
 }

@@ -9,7 +9,7 @@ const Portfolio: React.FC = () => {
     <div>
       <Header />
       <h1 className='section-header'>Portfolio</h1>
-      <p>Some portfolio links of mine.</p>
+      <p className='portfolio-subheader'>Some portfolio links of mine.</p>
       <PortfolioGrid/>
     </div>
   );

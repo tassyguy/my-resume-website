@@ -17,7 +17,7 @@ const Home: React.FC = () => { // Get the section ID from the URL
        <p>Welcome to my website! This site is currently under construction so be cautioned. I would LOVE to have the design finished but Google seems to want to take their time with releasing Material Design 3.</p>
        <p>It&apos;s fine, I&apos;m fine. 🙃</p>
               <p>This site was built using Next.JS, TypeScript, React, SCSS, and deployed using GitHub Actions.</p>
-              <Link href='https://github.com/tassyguy/my-resume-website'>Check out the repo for this website here!</Link>
+              <Link href='https://github.com/tassyguy/my-resume-website' className='repo'>Check out the repo for this website here!</Link>
               <LastCommitTimestamp/>
               <p>Current site roadmap:</p>
               <ul className='features'>
@@ -34,7 +34,7 @@ const Home: React.FC = () => { // Get the section ID from the URL
                 <li>🔲Add accessibility features</li>
                 <li>🔲Proper mobile browser support</li>
                 <li>🔲Allow for custom theme switching</li>
-                <li>🔲Light/dark mode support</li>
+                <li>✅Light/dark mode support</li>
                 <li>🔲Add and password-protect References page</li>
                 <li>🔲Reduce file size of project</li>
               </ul>

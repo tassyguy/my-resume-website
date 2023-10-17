@@ -2,11 +2,11 @@
 import React from 'react';
 import PortfolioLink from '@/components/PortfolioLink';
 import portfolioData from '../../../../data/portfolio.json';
-import './PortfolioGrid.module.scss';
+import styles from './PortfolioGrid.module.scss';
 
 const PortfolioGrid: React.FC = () => {
   return (
-    <div className='linksContainer'>
+    <div className={styles.linksContainer}>
     {portfolioData.map((item, index) => (
         <PortfolioLink
         key={index}

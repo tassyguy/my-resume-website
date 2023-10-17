@@ -31,6 +31,11 @@ const Header: React.FC = () => {
           </div>*/}
         </ul>
       </nav>
+      <div className="repo-logo">
+        <Link href="https://github.com/tassyguy/my-resume-website">
+          <Image src="/logos/github-mark.svg" alt="GitHub Logo" width={40} height={40} className="repo-image"/>
+        </Link>
+      </div>
     </header>
     
   );
