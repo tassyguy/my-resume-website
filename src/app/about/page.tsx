@@ -22,7 +22,7 @@ const AboutPage: React.FC = () => {
         <section className="mt-4">
           <h2 className="text-xl font-semibold mb-2 about">Professional Background</h2>
           <p>
-            I graduated from Georgia State University with a Bachelor&apos;s degree in ComputerScience. Since then, I&apos;ve
+            I graduated from Georgia State University with a Bachelor&apos;s degree in Computer Science. Since then, I&apos;ve
             worked at Dematic, Verison Wireless, and other places and gained experience in software development.
           </p>
         </section>
@@ -61,7 +61,7 @@ const AboutPage: React.FC = () => {
         {/* Contact Information */}
         <section className="mt-4">
           <h2 className="text-xl font-semibold mb-2 about">Let&apos;s Connect!</h2>
-          <p>If you&apos;re interested in collaborating or interviewing me for a potential positionm, or have any questions, feel free to reach out. I&apos;m always
+          <p>If you&apos;re interested in collaborating or interviewing me for a potential position, or have any questions, feel free to reach out. I&apos;m always
             open to new opportunities and partnerships.</p>
           <p>Email: <Link href="mailto:simonxphillips@gmail.com" className={'about'}>simonxphillips@gmail.com</Link></p>
           <p>LinkedIn: <Link href="linkedin.com/in/simonxphillips" className={'about'}>linkedin.com/in/simonxphillips</Link></p>
