@@ -26,6 +26,10 @@ export interface SectionProps {
   children: ReactNode;
 }
 
+export interface ContentContainerProps {
+  children: ReactNode;
+}
+
 export interface PortfolioLinkProps {
   name: string;
   link: string;

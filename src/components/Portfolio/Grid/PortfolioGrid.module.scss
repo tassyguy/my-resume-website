@@ -1,13 +1,13 @@
 .linksContainer {
     display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 48px;
-    align-items: center;
-    justify-content: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 90%;
+        margin: 10px;
 }
 
 @media (max-width: 768px) {
     .linksContainer {
-        grid-template-columns: 1fr;
+        flex-direction: row;
     }
 }

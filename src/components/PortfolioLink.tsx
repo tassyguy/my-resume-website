@@ -10,17 +10,14 @@ const PortfolioLink: React.FC<PortfolioLinkProps> = ({
   description,
 }) => {
   return (
-    <div className='portfolio-item'>
-      <div className='portfolio-icon portfolio-content'>
-        <Image src={icon} alt={`${name} Icon`} width={48} height={48} className="portfolio-vector"/>
-        {/* <img src={icon} alt={`${name} Icon`} /> */}
-      </div>
-      <div className='portfolio-content'>
-        <h3 className={'portfolio-header'}><Link href={link} target='_blank' rel='noopener noreferrer'>{name}</Link></h3>
-        <div className='portfolio-details'>
-        <p className='portfolio-description'>{description}</p>
-      </div>
-      </div>
+    <div className="bookmark">
+      <Link href={link} className="bookmark-link">
+        <Image src={icon} alt={name} width={48} height={48} className="bookmark-icon" />
+        <div className="bookmark-text">
+          <h3 className="site-name">{name}</h3>
+          <p className="description">{description}</p>
+        </div>
+      </Link>
     </div>
   );
 };

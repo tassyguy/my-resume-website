@@ -33,7 +33,7 @@ const Header: React.FC = () => {
       </nav>
       <div className="repo-logo">
         <Link href="https://github.com/tassyguy/my-resume-website">
-          <Image src="/logos/github-mark.svg" alt="GitHub Logo" width={40} height={40} className="repo-image"/>
+          <Image src="/logos/GitHub.svg" alt="GitHub Logo" width={40} height={40} className="repo-image"/>
         </Link>
       </div>
     </header>

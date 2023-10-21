@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import LastCommitTimestamp from '@/components/LastCommitTimestamp';
 import Link from 'next/link';
 import '../../styles/styles.scss';
+import ContentContainer from '@/components/ContentContainer/ContentContainer';
 
 
 const Home: React.FC = () => { // Get the section ID from the URL
@@ -12,6 +13,7 @@ const Home: React.FC = () => { // Get the section ID from the URL
   return (
     <div>
       <Header />
+      <ContentContainer>
       <h1 className='section-header'>Simon Phillips</h1>
       <Image src='/images/me.jpg' alt='A picture of me' width={400} height={400} className={'profile'}/>
        <p>Welcome to my website! This site is currently under construction so be cautioned. I would LOVE to have the design finished but Google seems to want to take their time with releasing Material Design 3.</p>
@@ -38,6 +40,7 @@ const Home: React.FC = () => { // Get the section ID from the URL
                 <li>🔲Add and password-protect References page</li>
                 <li>🔲Reduce file size of project</li>
               </ul>
+      </ContentContainer>
     </div>
   );
 };

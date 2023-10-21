@@ -3,11 +3,13 @@ import React, { useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import workExperiences from '../../../data/workExperience.json';
 import '../../../styles/styles.scss';
+import ContentContainer from '@/components/ContentContainer/ContentContainer';
 
 const WorkExperience: React.FC = () => {
   return (
     <div>
       <Header />
+      <ContentContainer>
       <h1 className='section-header'>Work Experience</h1>
       <p className='work-subheader'>Places I&apos;ve work at or for.</p>
       {workExperiences.map((employer, index) => (
@@ -40,6 +42,7 @@ const WorkExperience: React.FC = () => {
           {index !== workExperiences.length - 1 && <div className='job-section'></div>}
         </div>
       ))}
+      </ContentContainer>
     </div>
   );
 };
