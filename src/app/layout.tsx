@@ -1,4 +1,6 @@
 // import './globals.css'
+import ContentContainer from '@/components/ContentContainer/ContentContainer'
+import Header from '@/components/Header'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
@@ -19,7 +21,14 @@ export default function RootLayout({
       <head>
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
       </head>
-      <body className={inter.className}><div>{children}</div></body>
+      <body className={inter.className}>
+        <div>
+          <Header/>
+          <ContentContainer>
+            {children}
+          </ContentContainer>
+        </div>
+      </body>
     </html>
   )
 }

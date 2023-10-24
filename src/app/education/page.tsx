@@ -8,9 +8,7 @@ import ContentContainer from '@/components/ContentContainer/ContentContainer';
 
 const EducationPage: React.FC = () => {
   return (
-    <div>
-      <Header/>
-      <ContentContainer>
+    <>
         <h1 className='section-header'>Education</h1>
         {educationData.map((education, index) => (
           <EducationExperience
@@ -24,8 +22,7 @@ const EducationPage: React.FC = () => {
             coursework={education.coursework}
           />
         ))}
-      </ContentContainer>
-    </div>
+    </>
   );
 };
 

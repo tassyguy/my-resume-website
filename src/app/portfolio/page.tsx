@@ -7,14 +7,11 @@ import ContentContainer from '@/components/ContentContainer/ContentContainer';
 
 const Portfolio: React.FC = () => {
   return (
-    <div>
-      <Header />
-      <ContentContainer>
+    <>
       <h1 className='section-header'>Portfolio</h1>
       <p className='portfolio-subheader'>Some portfolio links of mine.</p>
       <PortfolioGrid/>
-      </ContentContainer>
-    </div>
+    </>
   );
 };
 

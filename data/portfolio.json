@@ -2,7 +2,7 @@
   {
     "name": "GitHub",
     "link": "https://github.com/tassyguy",
-    "icon": "/logos/GitHub.svg",
+    "icon": "/logos/Github.svg",
     "description": "My GitHub profile with all my current and past personal projects."
   },
   {
@@ -20,7 +20,7 @@
   {
     "name": "Resume",
     "link": "https://drive.google.com/file/d/10zoCEWRpc8XblT5ZZE10HWRTkMMMTuu0/view?usp=sharing",
-    "icon": "/logos/googledrive.png",
+    "icon": "/logos/googledrive.svg",
     "description": "A link to view my current resume."
   }
 ]
