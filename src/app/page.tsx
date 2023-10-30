@@ -13,38 +13,42 @@ const Home: React.FC = () => { // Get the section ID from the URL
   return (
     <>
       <h1 className='section-header'>Simon Phillips</h1>
-      <Image src='/images/me.jpg' alt='A picture of me' width={400} height={400} className={'profile'}/>
-      <h1 className='section-header'>About Me</h1>
       <section className="p-4">
+            {/* Introduction */}
+            <p>
+              Hi, I&apos;m Simon, a seasoned software engineer with a passion for crafting innovative web
+              solutions. I bring 8 years of experience in JavaScript, TypeScript, Java, Node.JS, and other software platforms.
+              This site was built using Next.JS, TypeScript, React, SCSS, and deployed using GitHub Actions.
+            </p>
+            </section>
+      <div className="intro-container">
+        <div className="intro-image">
+          <Image src='/images/me.jpg' alt='A picture of me' width={400} height={400} className={'profile intro-inage-tag'}/>
+        </div>
+        <div className="intro-text">
 
-        {/* Introduction */}
-        <p>
-          Hi, I&apos;m Simon, a seasoned software engineer with a passion for crafting innovative web
-          solutions. I bring 8 years of experience in JavaScript, TypeScript, Java, Node.JS, and other software platforms.
-          This site was built using Next.JS, TypeScript, React, SCSS, and deployed using GitHub Actions.
-        </p>
-
-        {/* Professional Background */}
-        <section className="mt-4">
-          <h2 className="text-xl font-semibold mb-2 about">Professional Background</h2>
-          <p>
-            I graduated from Georgia State University with a Bachelor&apos;s degree in Computer Science. Since then, I&apos;ve
-            worked at Dematic, Verison Wireless, and other places and gained experience in software development.
-          </p>
-        </section>
-
-        {/* Technical Skills */}
-        <section className="mt-4">
-          <h2 className="text-xl font-semibold mb-2 about">Technical Skills</h2>
-          <ul className="list-disc list-inside">
-            <li>JavaScript, Java Spring, React, Redux, Adobe Creative Suite, Bootstrap, Adobe Photoshop, Adobe Illustrator</li>
-            <li>HTML5 & CSS3, Material Design, Sketch, Microsoft Office, VirtualBox, IntelliJ, iTerm, Node.js, NPM, Angular.js</li>
-            <li>Python, Adobe Experience Designer, Figma, Unix Terminal, Scrum, Agile, User Interface, User Experience, User Testing</li>
-            <li>Visual Studio Code, CLI, Bash, Shell, Windows Server, Linux Server Deployment and Administration</li>
-            <li>Arch Linux, ZSH, Ubuntu, Shell, Environment Files</li>
-            {/* Add more skills */}
-          </ul>
-        </section>
+          {/* Professional Background */}
+          <section className="mt-4">
+            <h2 className="text-xl font-semibold mb-2 about">Professional Background</h2>
+            <p>
+              I graduated from Georgia State University with a Bachelor&apos;s degree in Computer Science. Since then, I&apos;ve
+              worked at Dematic, Verison Wireless, and other places and gained experience in software development.
+            </p>
+          </section>
+          {/* Technical Skills */}
+          <section className="mt-4">
+            <h2 className="text-xl font-semibold mb-2 about">Technical Skills</h2>
+            <ul className="list-disc list-inside">
+              <li>JavaScript, Java Spring, React, Redux, Adobe Creative Suite, Bootstrap, Adobe Photoshop, Adobe Illustrator</li>
+              <li>HTML5 & CSS3, Material Design, Sketch, Microsoft Office, VirtualBox, IntelliJ, iTerm, Node.js, NPM, Angular.js</li>
+              <li>Python, Adobe Experience Designer, Figma, Unix Terminal, Scrum, Agile, User Interface, User Experience, User Testing</li>
+              <li>Visual Studio Code, CLI, Bash, Shell, Windows Server, Linux Server Deployment and Administration</li>
+              <li>Arch Linux, ZSH, Ubuntu, Shell, Environment Files</li>
+              {/* Add more skills */}
+            </ul>
+          </section>
+        </div>
+      </div>
 
         {/* Professional Achievements
           <section className="mt-4">
@@ -73,7 +77,6 @@ const Home: React.FC = () => { // Get the section ID from the URL
           <p>LinkedIn: <Link href="linkedin.com/in/simonxphillips" className={'about'}>linkedin.com/in/simonxphillips</Link></p>
           {/* Add more contact information */}
         </section>
-      </section>
               <p>Current site roadmap:</p>
               <ul className='features'>
                 <li>✅Write site in Next.JS</li>

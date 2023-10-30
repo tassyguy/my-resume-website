@@ -234,3 +234,46 @@ a {
     /* Stretch to fit 25% of the container for larger screens */
     margin: 5px;
 }
+
+.intro-container {
+    display: flex;
+    align-items: center;
+        /* Vertically center content */
+    /* Align items at the top of the container */
+}
+
+.intro-image {
+    margin-right: 10px;
+
+.intro-text {
+    flex: 1;
+    /* Take up 50% of the container width */
+}
+
+.intro-image-tag {
+    flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        width: 400px;
+        /* Set the width to match the image's width */
+        height: 400px;
+        /* Set the height to match the image's height */
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 1024px) {
+    .intro-container {
+        flex-direction: column;
+        /* Change to a vertical layout */
+    }
+
+    .intro-image,
+    .intro-text {
+        flex: 1;
+        /* Take up 100% of the container width (full-width) */
+    }
+}
