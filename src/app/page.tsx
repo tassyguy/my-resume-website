@@ -23,7 +23,7 @@ const Home: React.FC = () => { // Get the section ID from the URL
             </section>
       <div className="intro-container">
         <div className="intro-image">
-          <Image src='/images/me.jpg' alt='A picture of me' width={400} height={400} className={'profile intro-inage-tag'}/>
+          <Image src='/images/me.png' alt='A picture of me' width={400} height={400} className={'profile intro-image-tag'}/>
         </div>
         <div className="intro-text">
 

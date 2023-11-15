@@ -5,7 +5,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import './fonts.scss';
-@import './themes/material/theme.css';
+@import './themes/main/theme.css';
 
 /* Your custom SCSS styles go here */
 
@@ -256,6 +256,7 @@ a {
         justify-content: center;
         align-items: center;
         margin-right: 10px;
+        margin-left: 10px;
         width: 400px;
         /* Set the width to match the image's width */
         height: 400px;
