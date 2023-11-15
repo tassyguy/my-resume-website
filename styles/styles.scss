@@ -25,6 +25,38 @@ p, ul, li, .section-header, .portfolio-header, .school, .about, .job-info, .time
   margin: 10px 10px 10px 0px; /* Adjust the margin as needed */
 }
 
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.header-icon {
+    font-size: 22px;
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+
 .section-header {
     text-align: center;
 }

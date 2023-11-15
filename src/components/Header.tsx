@@ -15,16 +15,16 @@ const Header: React.FC = () => {
       <nav className={'nav-items'}>
         <ul>
           <li>
-            <Link href="/">About</Link>
+            <Link href="/"><span className="material-icons header-icon">face</span>About</Link>
           </li>
           <li>
-            <Link href="/work-experience">Work</Link>
+            <Link href="/work-experience"><span className="material-icons header-icon">business_center</span>Work</Link>
           </li>
           <li>
-            <Link href="/education">Education</Link>
+            <Link href="/education"><span className="material-icons header-icon">school</span>Education</Link>
           </li>
           <li>
-            <Link href="/portfolio">Portfolio</Link>
+            <Link href="/portfolio"><span className="material-icons header-icon">code</span>Portfolio</Link>
           </li>
           {/*<div>
             <Link href="/references" className="hover:underline">References</Link>
