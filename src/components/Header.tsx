@@ -9,7 +9,7 @@ const Header: React.FC = () => {
     <header className="navbar">
       <div className="logo">
         <Link href="/">
-          <Image src="/images/logo-dark.jpg" alt="My logo" width={48} height={48} className="logoImage"/>
+          <Image src="/images/logo-dark.png" alt="My logo" width={40} height={40} className="logoImage"/>
         </Link>
       </div>
       <nav className={'nav-items'}>
