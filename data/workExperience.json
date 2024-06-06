@@ -1,5 +1,29 @@
 [
   {
+    "employerName": "Deloitte",
+    "jobs": [
+      {
+        "title": "Senior Full-Stack Software Engineer",
+        "startDate": "January 2024",
+        "endDate": "Present",
+        "responsibilities": [
+          "Worked with development team to migrate and enhance the Center for Disease Control's VAMS vaccine distribution program to a modern AWS-backed environment based on React (v18), TypeScript, Node.JS, and Redux with an AWS Serverless Infrastructure (API Gateway/AWS Lambdas).",
+          "Was primary developer for guest registration and account editing functionality, led multiple developers with planning out feature rollout in addition to ensuring government-specific security and accessibility requirements were met, documented, and implemented in appropriate timing.",
+          "Regularly worked with team leads, product owners, clients, and fellow developers to ensure high-quality code was built and deployed that fulfilled client's needs and requirements.",
+          "Helped lead in designing, updating, and migrating API schema for project during transition from Salesforce-hosted instance to newer AWS-based instance.",
+          "Regularly prepared, developed, deployed, and presented high-quality product demos at several points of development for both leadership and the client."
+        ],
+        "skills": [
+          "Visual Studio Code, Amazon Web Services, AWS Lambdas, React (version 18.x)",
+          "Java, Java Spring Boot, React Redux, TypeScript, npm, nvm, Node.js",
+          "CI/CD software, bash, shell scripts, GitHub Issues, private GitHub instances, AWS deployment, OTP authentication",
+          "Chrome developer tools, Firefox development tools, SCSS, MUI, Jest,  AWS Serverless Environments",
+          "CI/CD, git pipelines, macOS, Windows, Axios, JWT Tokens, PowerShell, Windows Subsystem for Linux"
+        ]
+      }
+    ]
+  },
+  {
     "employerName": "Simon Says Code, LLC.",
     "jobs": [
       {
@@ -130,7 +154,6 @@
         "endDate": "July 2018",
         "responsibilities": [
           "Worked with Senior Product Analyst to help create UX design concepts for services such as analytics dashboards that would be then sent to developers to be made into a functioning application"
-
         ],
         "skills": [
           "Visual Studio Code, Sketch, Material Design, Apple Design Guidelines, Material Design"
