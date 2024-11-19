@@ -1,11 +1,32 @@
 [
   {
+    "employerName": "NICE",
+    "jobs": [
+      {
+        "title": "Senior DevOps and Software Engineer",
+        "startDate": "August 2024",
+        "endDate": "Present",
+        "responsibilities": [
+          "Worked with POC team to setup, deploy, troubleshoot, and administer server environments for potential CXOne and Nexidia NIA platform B2B customers.",
+          "Worked with clients to make sure final proof-of-concept demos matched both potential customer and business requirements.",
+          "Worked with POC team to automate server setup process to cut down setup time by nearly 80% via PowerShell scripting and automations.",
+          "Worked with Nexidia development team to convert Nexidia dashboard platform to an Angular-based architecture as per customer security requirements.",
+          "Regularly worked with team leads, product owners, clients, and fellow developers to ensure high-quality code was built and deployed."
+        ],
+        "skills": [
+          "Chrome developer tools, Firefox development tools, SCSS, Angular 17, Jest,  Windows Server environments",
+          "CI/CD, git pipelines, Windows Server 2022, Active Directory, PowerShell, CXOne Platform, Nexidia Platform"
+        ]
+      }
+    ]
+  },
+  {
     "employerName": "Deloitte",
     "jobs": [
       {
         "title": "Senior Full-Stack Software Engineer",
         "startDate": "January 2024",
-        "endDate": "Present",
+        "endDate": "July 2024",
         "responsibilities": [
           "Worked with development team to migrate and enhance the Center for Disease Control's VAMS vaccine distribution program to a modern AWS-backed environment based on React (v18), TypeScript, Node.JS, and Redux with an AWS Serverless Infrastructure (API Gateway/AWS Lambdas).",
           "Was primary developer for guest registration and account editing functionality, led multiple developers with planning out feature rollout in addition to ensuring government-specific security and accessibility requirements were met, documented, and implemented in appropriate timing.",
