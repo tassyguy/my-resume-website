@@ -1561,7 +1561,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    const handleKeyDown = (e) => {
+    const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "ArrowRight") {
         const currentTabIndex = tabs.findIndex(
           (tab) => tab.toLowerCase() === activeTab
