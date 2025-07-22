@@ -1,7 +1,14 @@
-import type { NextConfig } from "next";
+// next.config.js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // <-- this is what replaces `next export`
+  output: "export",
 
-const nextConfig: NextConfig = {
-  /* config options here */
+  // optional: emit `/foo/index.html` instead of `/foo.html`
+  // trailingSlash: true,
+
+  // optional: change the export folder name (defaults to "out")
+  // distDir: "dist",
 };
 
-export default nextConfig;
+module.exports = nextConfig;
