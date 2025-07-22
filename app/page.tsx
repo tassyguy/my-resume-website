@@ -1527,7 +1527,7 @@ const App = () => {
   const [activeTab, setActiveTab] = useState("intro");
   const [currentFontIndex, setCurrentFontIndex] = useState(0);
   const [currentStyleIndex, setCurrentStyleIndex] = useState(0);
-  const tabRefs = useRef([]);
+  const tabRefs = useRef<Array<HTMLButtonElement | null>>([]);
 
   const theme =
     highContrastMode === "dark"
