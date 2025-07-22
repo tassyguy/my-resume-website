@@ -1,14 +1,17 @@
-// next.config.js
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-  // <-- this is what replaces `next export`
-  output: "export",
-
-  // optional: emit `/foo/index.html` instead of `/foo.html`
+  output: 'export',
+ 
+  // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   // trailingSlash: true,
-
-  // optional: change the export folder name (defaults to "out")
-  // distDir: "dist",
-};
-
-module.exports = nextConfig;
+ 
+  // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
+  // skipTrailingSlashRedirect: true,
+ 
+  // Optional: Change the output directory `out` -> `dist`
+  // distDir: 'dist',
+}
+ 
+module.exports = nextConfig
