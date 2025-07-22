@@ -1602,7 +1602,7 @@ const App = () => {
             {tabs.map((tab, index) => (
               <TabButton
                 key={tab}
-                ref={(el) => (tabRefs.current[index] = el)}
+                ref={(el) => {tabRefs.current[index] = el}}
                 label={tab}
                 activeTab={activeTab}
                 theme={theme}
