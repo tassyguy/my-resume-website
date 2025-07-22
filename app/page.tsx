@@ -1523,7 +1523,7 @@ const ContactSection: FC<SectionProps> = ({ theme }) => {
 
 const App = () => {
   const [currentThemeIndex, setCurrentThemeIndex] = useState(0);
-  const [highContrastMode, setHighContrastMode] = useState(null);
+  const [highContrastMode, setHighContrastMode] = useState<"dark" | "light" | null>(null);
   const [activeTab, setActiveTab] = useState("intro");
   const [currentFontIndex, setCurrentFontIndex] = useState(0);
   const [currentStyleIndex, setCurrentStyleIndex] = useState(0);
