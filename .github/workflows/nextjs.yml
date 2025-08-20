@@ -22,7 +22,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Detect package manager (npm or yarn)
+      # 2. Detect package manager (npm or Yarn)
       - name: Detect package manager
         id: detect
         run: |
@@ -45,22 +45,25 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect.outputs.manager }} ${{ steps.detect.outputs.install_cmd }}
 
-      # 5. Build the Next.js app
+      # 5. Build Next.js app
       - name: Build Next.js
         run: npx next build
 
-      # 6. Configure GitHub Pages (Next.js 15 automatic export)
+      # 6. Export static HTML
+      - name: Export Next.js static HTML
+        run: npx next export
+
+      # 7. Configure GitHub Pages
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
         with:
           static_site_generator: next
 
-      # 7. Upload Pages artifact
+      # 8. Upload Pages artifact (must point to out/)
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Point to the main Next.js build folder; configure-pages will detect static files automatically
-          path: .next
+          path: out
 
   deploy:
     runs-on: ubuntu-latest
