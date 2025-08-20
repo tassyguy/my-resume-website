@@ -1,8 +1,9 @@
-name: Deploy Next.js 15 site to GitHub Pages
+name: Deploy Next.js 15 to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -10,71 +11,50 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      # 1. Checkout repository
+      # 1. Checkout code
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Detect package manager (npm or Yarn)
-      - name: Detect package manager
-        id: detect
-        run: |
-          if [ -f yarn.lock ]; then
-            echo "manager=yarn" >> $GITHUB_OUTPUT
-            echo "install_cmd=install --frozen-lockfile" >> $GITHUB_OUTPUT
-          else
-            echo "manager=npm" >> $GITHUB_OUTPUT
-            echo "install_cmd=ci" >> $GITHUB_OUTPUT
-          fi
-
-      # 3. Setup Node.js
+      # 2. Setup Node
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: ${{ steps.detect.outputs.manager }}
 
-      # 4. Install dependencies
+      # 3. Install dependencies
       - name: Install dependencies
-        run: ${{ steps.detect.outputs.manager }} ${{ steps.detect.outputs.install_cmd }}
+        run: npm ci
 
-      # 5. Build Next.js app
+      # 4. Build Next.js
       - name: Build Next.js
         run: npx next build
 
-      # 6. Export static HTML
+      # 5. Export static HTML
       - name: Export Next.js static HTML
         run: npx next export
 
-      # 7. Configure GitHub Pages
+      # 6. Configure GitHub Pages
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
         with:
           static_site_generator: next
 
-      # 8. Upload Pages artifact (must point to out/)
+      # 7. Upload Pages artifact
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          # Next 15 outputs static HTML to 'out' folder
           path: out
 
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
+      # 8. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: Show deployed URL
+      # 9. Output deployment URL
+      - name: Deployment URL
         run: echo "Your site is live at ${{ steps.deployment.outputs.page_url }}"
