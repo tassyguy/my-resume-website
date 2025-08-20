@@ -1,9 +1,8 @@
-name: Deploy Next.js 15 to GitHub Pages
+name: Deploy Next.js 15 site to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -15,11 +14,11 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      # 1. Checkout code
+      # 1. Checkout repo
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Setup Node
+      # 2. Setup Node.js
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -31,30 +30,29 @@ jobs:
 
       # 4. Build Next.js
       - name: Build Next.js
-        run: npx next build
+        run: npx --no-install next build
 
       # 5. Export static HTML
-      - name: Export Next.js static HTML
-        run: npx next export
+      - name: Export static HTML
+        run: npx --no-install next export
 
       # 6. Configure GitHub Pages
-      - name: Configure GitHub Pages
+      - name: Configure Pages
         uses: actions/configure-pages@v5
         with:
           static_site_generator: next
 
-      # 7. Upload Pages artifact
+      # 7. Upload artifact (must point to 'out/')
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Next 15 outputs static HTML to 'out' folder
           path: out
 
       # 8. Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
 
-      # 9. Output deployment URL
+      # 9. Show deployed URL
       - name: Deployment URL
         run: echo "Your site is live at ${{ steps.deployment.outputs.page_url }}"
