@@ -10,35 +10,20 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       # 1. Checkout repository
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       # 2. Setup Node.js
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: "20"
-          cache: "npm"
+          node-version: 20
+          cache: npm
 
-      # 3. Restore Next.js cache
-      - name: Restore Next.js cache
-        uses: actions/cache@v4
-        with:
-          path: .next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**/*.{js,ts,jsx,tsx}') }}
-          restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
-
-      # 4. Install dependencies
+      # 3. Install dependencies
       - name: Install dependencies
         run: |
           if [ -f yarn.lock ]; then
@@ -47,19 +32,19 @@ jobs:
             npm ci
           fi
 
-      # 5. Build the Next.js project using local binary
+      # 4. Build the Next.js project
       - name: Build Next.js
-        run: ./node_modules/.bin/next build
+        run: npx next build
 
-      # 6. Export static HTML using local binary
+      # 5. Export static HTML
       - name: Export Next.js
-        run: ./node_modules/.bin/next export
+        run: npx next export
 
-      # 7. Upload the output artifact for Pages
+      # 6. Upload the output artifact for Pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: out
 
   deploy:
     runs-on: ubuntu-latest
@@ -68,11 +53,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      # 1. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
 
-      # 2. Print the deployed site URL
       - name: Show deployed URL
         run: echo "Your site is live at ${{ steps.deployment.outputs.page_url }}"
