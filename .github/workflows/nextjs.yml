@@ -18,67 +18,44 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # 1. Checkout repo
-      - name: Checkout
+      # 1. Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Detect package manager
-      - name: Detect package manager
-        id: detect-package-manager
-        run: |
-          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
-            echo "manager=yarn" >> $GITHUB_OUTPUT
-          elif [ -f "${{ github.workspace }}/package-lock.json" ]; then
-            echo "manager=npm" >> $GITHUB_OUTPUT
-          else
-            echo "Unable to determine package manager"
-            exit 1
-          fi
-
-      # 3. Setup Node.js
-      - name: Setup Node
+      # 2. Setup Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
+          cache: "npm"
 
-      # 4. Restore Next.js cache
+      # 3. Restore Next.js cache
       - name: Restore Next.js cache
         uses: actions/cache@v4
         with:
           path: .next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**/*.{js,ts,jsx,tsx}') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
 
-      # 5. Install dependencies
+      # 4. Install dependencies
       - name: Install dependencies
         run: |
-          if [ "${{ steps.detect-package-manager.outputs.manager }}" == "yarn" ]; then
+          if [ -f yarn.lock ]; then
             yarn install --frozen-lockfile
           else
             npm ci
           fi
 
-      # 6. Build the Next.js site
+      # 5. Build the Next.js project using local binary
       - name: Build Next.js
-        run: |
-          if [ "${{ steps.detect-package-manager.outputs.manager }}" == "yarn" ]; then
-            yarn next build
-          else
-            npx --no-install next build
-          fi
+        run: ./node_modules/.bin/next build
 
-      # 7. Export static HTML
+      # 6. Export static HTML using local binary
       - name: Export Next.js
-        run: |
-          if [ "${{ steps.detect-package-manager.outputs.manager }}" == "yarn" ]; then
-            yarn next export
-          else
-            npx --no-install next export
-          fi
+        run: ./node_modules/.bin/next export
 
-      # 8. Upload artifact for GitHub Pages
+      # 7. Upload the output artifact for Pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -91,9 +68,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # 1. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
 
+      # 2. Print the deployed site URL
       - name: Show deployed URL
         run: echo "Your site is live at ${{ steps.deployment.outputs.page_url }}"
