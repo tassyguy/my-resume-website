@@ -14,7 +14,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # 1. Checkout repository
+      # 1. Checkout repo
       - uses: actions/checkout@v4
 
       # 2. Setup Node.js
@@ -25,26 +25,24 @@ jobs:
 
       # 3. Install dependencies
       - name: Install dependencies
-        run: |
-          if [ -f yarn.lock ]; then
-            yarn install --frozen-lockfile
-          else
-            npm ci
-          fi
+        run: npm ci
 
-      # 4. Build the Next.js project
+      # 4. Build the Next.js app
       - name: Build Next.js
         run: npx next build
 
-      # 5. Export static HTML
-      - name: Export Next.js
-        run: npx next export
+      # 5. Configure GitHub Pages for Next 15
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          static_site_generator: next
 
-      # 6. Upload the output artifact for Pages
-      - name: Upload artifact
+      # 6. Upload artifact for GitHub Pages
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: out
+          # Next 15 output directory
+          path: .next/export
 
   deploy:
     runs-on: ubuntu-latest
