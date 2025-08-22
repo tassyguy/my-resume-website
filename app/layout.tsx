@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   title: 'Simon Phillips',
   description:
     'The official portfolio for Simon Phillips. Discover a collection of my recent software engineering projects, technical skills, and professional experience.',
+  icons: {
+    icon: '/favicon.ico', // Default favicon
+    apple: '/apple-touch-icon.png', // Apple touch icon
+  },
 };
 
 export default function RootLayout({
