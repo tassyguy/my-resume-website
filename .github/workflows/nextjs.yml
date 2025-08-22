@@ -2,7 +2,7 @@ name: Deploy Next.js 15 site to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ['main']
   workflow_dispatch:
 
 permissions:
@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: false
 
 jobs:
@@ -22,44 +22,28 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Detect package manager (npm or yarn)
-      - name: Detect package manager
-        id: detect
-        run: |
-          if [ -f yarn.lock ]; then
-            echo "manager=yarn" >> $GITHUB_OUTPUT
-            echo "install_cmd=install --frozen-lockfile" >> $GITHUB_OUTPUT
-          else
-            echo "manager=npm" >> $GITHUB_OUTPUT
-            echo "install_cmd=ci" >> $GITHUB_OUTPUT
-          fi
-      # 3. Setup Node.js
+      # 2. Setup Node.js
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: ${{ steps.detect.outputs.manager }}
+          cache: 'npm' # Assuming you use npm
 
-      # 4. Install dependencies
+      # 3. Install dependencies
       - name: Install dependencies
-        run: ${{ steps.detect.outputs.manager }} ${{ steps.detect.outputs.install_cmd }}
+        run: npm ci
 
-      # 5. Build the Next.js app
+      # 4. Build the Next.js app
+      # This command now generates the static site in the './out' directory
       - name: Build Next.js
-        run: npx next build
+        run: npm run build
 
-      # 6. Configure GitHub Pages (Next.js 15 automatic export)
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-        with:
-          static_site_generator: next
-
-      # 7. Upload Pages artifact
+      # 5. Upload Pages artifact
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Point to the main Next.js build folder; configure-pages will detect static files automatically
-          path: .next
+          # Upload the directory that now contains your static site
+          path: ./out
 
   deploy:
     runs-on: ubuntu-latest
